@@ -3,21 +3,21 @@
 Foquei nas versões em si, as .x são para correção de bugs e problemas de segurança, mas cada versão abaixo teve diversas .x justamente para essas correções, por ser um software está sujeito a erros e bugs.
 ---
 
-PHP 3.0: Primeira versão que se assemelha ao PHP atual, além da mudança de nome para PHP, um ponto forte é a extensibilidade que provê para os usuarios uma interface para multiplas base de dados, protocolos e APIs.
+PHP 3.0: Primeira versão que se assemelha ao PHP atual, além da mudança de nome para PHP, um ponto forte é a extensibilidade que provê para os usuários uma interface para multiplas base de dados, protocolos e APIs.
 
-PHP 4.0: Reescrita completa do core da linguagem, nova engine a zend engine, suporte para mais webservers, HTTP Sessions, buffering, manuseio de inputs do usuario e diversos novos construtores da linguagem.
+PHP 4.0: Reescrita completa do core da linguagem, nova engine a zend engine, suporte para mais webservers, HTTP Sessions, buffering, manuseio de inputs do usuário e diversos novos construtores da linguagem.
 
-PHP 4.1: Nova interface de usuário para melhorar a segurança, perfomance altamente aprimorada em especial em ambientes Windows, Suporte para versionar extensoes, entre muitas outras funções e otimizações.
+PHP 4.1: Nova interface de usuário para melhorar a segurança, performance altamente aprimorada em especial em ambientes Windows, Suporte para versionar extensões, entre muitas outras funções e otimizações.
 
-PHP 4.2: Variaveis externas não são mais registradas como variaveis globais e perfomance altamente aprimorada no upload de arquivos.
+PHP 4.2: Variáveis externas não são mais registradas como variáveis globais e perfomance altamente aprimorada no upload de arquivos.
 
 PHP 4.3: GD é empacotada pela distribuição, melhorias de performnance numa variedade de funções relativas a string, atualização de lib padrão melhorando a segurança, entre outras melhorias.
 
-PHP 4.4: Lançamento de correção de bugs de corrupção de memoria ao utilizar referencias, problemas de segurança com shtool.
+PHP 4.4: Lançamento de correção de bugs de corrupção de memória ao utilizar referencias, resolução de problemas de segurança do shtool.
 
-PHP 5.0: Reescrita do suporte a XML, inclusão do mysqli com suporte para as novidades do mysql da epoca como PREPARED STATEMENTS
+PHP 5.0: Reescrita do suporte a XML, inclusão do mysqli com suporte para as novidades do mysql da época como PREPARED STATEMENTS
 
-PHP 5.1: Reescrita do manuseio de data com suporte a timezone aprimorado, melhoria de perfomance comparado ao 5.0.x, PDO HABILITADA POR PADRÃO, 30 novas funções e diversas extensoes, PCRE e SQLite atualizados para ultimas versões (da epoca), 400 correções de bugs, PEAR atualizado para 1.4.5
+PHP 5.1: Reescrita do manuseio de data com suporte a timezone aprimorado, melhoria de perfomance comparado ao 5.0.x, PDO HABILITADA POR PADRÃO, 30 novas funções e diversas extensoes, PCRE e SQLite atualizados para ultimas versões (da época), 400 correções de bugs, PEAR atualizado para 1.4.5
 
 PHP 5.2: Novo gerenciador de memoria para a zend engine, input e json extensions foram adicionadas e habilitadas por padrão, introduzida extensão zip, hooks para trakear upload de arquivos, ADICIONADO DATETIME e DATETIMEZONE. Atualizados SqLite e PCRE, OpenSSL MMysql e postgreesql para windows atualizados, melhorias de perfomance e correção de 200 bugs.
 
