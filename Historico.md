@@ -1,7 +1,8 @@
 # Histórico
-### Abaixo um breve histórico das versões do PHP (estudo aprofundado da linguagem)
-Foquei nas versões em si, as .x são para correção de bugs e problemas de segurança, mas cada versão abaixo teve diversas .x justamente para essas correções, por ser um software está sujeito a erros e bugs.
----
+#### Abaixo um breve histórico das versões do PHP (estudo aprofundado da linguagem)
+
+**Foquei nas versões em si, as .x são para correção de bugs e problemas de segurança, mas cada versão abaixo teve diversas .x justamente para essas correções, por ser um software está sujeito à erros e bugs.**
+
 
 PHP 3.0: Primeira versão que se assemelha ao PHP atual, além da mudança de nome para PHP, um ponto forte é a extensibilidade que provê para os usuários uma interface para multiplas base de dados, protocolos e APIs.
 
