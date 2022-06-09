@@ -19,27 +19,27 @@ PHP 5.0: Reescrita do suporte a XML, inclusão do mysqli com suporte para as nov
 
 PHP 5.1: Reescrita do manuseio de data com suporte a timezone aprimorado, melhoria de perfomance comparado ao 5.0.x, PDO HABILITADA POR PADRÃO, 30 novas funções e diversas extensoes, PCRE e SQLite atualizados para ultimas versões (da época), 400 correções de bugs, PEAR atualizado para 1.4.5
 
-PHP 5.2: Novo gerenciador de memoria para a zend engine, input e json extensions foram adicionadas e habilitadas por padrão, introduzida extensão zip, hooks para trakear upload de arquivos, ADICIONADO DATETIME e DATETIMEZONE. Atualizados SqLite e PCRE, OpenSSL MMysql e postgreesql para windows atualizados, melhorias de perfomance e correção de 200 bugs.
+PHP 5.2: Novo gerenciador de memória para a zend engine, input e json extensions foram adicionadas e habilitadas por padrão, introduzida extensão zip, hooks para trakear upload de arquivos, ADICIONADO DATETIME e DATETIMEZONE, atualizados SqLite e PCRE, OpenSSL MMysql e postgreesql para windows atualizados, melhorias de performance e correção de 200 bugs.
 
-PHP 5.3: SUPORTE PARA NAMESPACES, funções lambda e CLOSURES, TERNÁRIOS, melhorias no arredodantamento de floats, deprecations são capturados via E_DEPRECATED, mais flexibilidade no php.ini, nosas extensões phar intl fileinfo sqlite3 enchante, mais de 140 bugs corrigos e otimizações
+PHP 5.3: SUPORTE PARA NAMESPACES, funções lambda e CLOSURES, TERNÁRIOS, melhorias no arredondamento de floats, deprecations são capturados via E_DEPRECATED, mais flexibilidade no php.ini, nosas extensões phar intl fileinfo sqlite3 enchante, mais de 140 bugs corrigos e otimizações
 
 PHP 5.4: Removido funções legadas, adicionado suporte para short array, ADICIONADO SUPORTE PARA TRAITS, E-ALL agora inclui E_STRICT, aprimorado engine zend para uso de memória, e muitas outras melhorias e otimizações no core.
 
-PHP 5.5: Adicionado generators e coroutines, adicionado finally, adicionado plataforma simplificada de hash para senhas, resolução de nome de classe escavavel via ::class, atualização da lib gb, melhorias de perfomance e otimizações.
+PHP 5.5: Adicionado generators e coroutines, adicionado finally, adicionado plataforma simplificada de hash para senhas, resolução de nome de classe escavavel via ::class, atualização da lib gb, melhorias de performance e otimizações.
 
-PHP 5.6: Expressoes escalaveis constantes, exponencialização usando **, FUNÇÕES E CONSTANTES PODEM SER IMPORTADAS USANDO A PALAVRA USE, uploads de arquivos maiories que 2GB são suportados, melhorias e correções de bugs.
+PHP 5.6: Expressoes escalaveis constantes, exponencialização usando `**`, FUNÇÕES E CONSTANTES PODEM SER IMPORTADAS USANDO A PALAVRA USE, uploads de arquivos maiories que 2GB são suportados, melhorias e correções de bugs.
 
-PHP 7.0: Melhorias na perfomance sendo até 2x mais rapido que o 5.6, diminuição no consumo de memoria, arvore abstrata de sintaxe, suporte consistente à 64 bits, melhorias na hieraquia de excessoes, MAIORIA DOS FATAL ERROS CONVERTIDOS PARA EXCEPTIONS, geração segura de números aleatórios, removido suporte antigo a SAPIs, NULL COALECING OPERATOR, CLASSES ANONIMAS.
+PHP 7.0: Melhorias na perfomance sendo até 2x mais rapido que o 5.6, diminuição no consumo de memoria, árvore abstrata de sintaxe, suporte consistente à 64 bits, melhorias na hieraquia de excessões, MAIORIA DOS FATAL ERROS CONVERTIDOS PARA EXCEPTIONS, geração segura de números aleatórios, removido suporte antigo a SAPIs, NULL COALECING OPERATOR, CLASSES ANÔNIMAS.
 
 PHP 7.1: Nullable types, VOID PARA RETORNO, modificadores de visibilidade para classes constantes, melhorias e correções de bugs.
 
-PHP 7.2: Suporte para conversão de chaves numericas em cast de objetos/arrays, um warning é emitido ao tentar contar um algo não contavel, NOVO TIPO OBJETO, ARGON2 NO PASSWORD HASH, mcrypt removido, nova extensão sodium.
+PHP 7.2: Suporte para conversão de chaves numericas em cast de objetos/arrays, um warning é emitido ao tentar contar algo não contável, NOVO TIPO OBJETO, ARGON2 NO PASSWORD HASH, mcrypt removido, nova extensão sodium.
 
 PHP 7.3: Aprimorado log FPM, Aprimorado deleção de arquivos em windows, diversas deprecações em funções.
 
-PHP 7.4: PROPRIEDADES TIPADAS, ARROW FUNCTIONS, Limitar o tipo de retorno e o tipo de argumento, desempacotamento dentro de arrays, referencias fracas, suporte para excelptions vindo de __toString, diversas deprecations e extensoes removidas do core.
+PHP 7.4: PROPRIEDADES TIPADAS, ARROW FUNCTIONS, Limitar o tipo de retorno e o tipo de argumento, desempacotamento dentro de arrays, referências fracas, suporte para exceptions vindo de `__toString`, diversas deprecations e extensões removidas do core.
 
-PHP 8.0: Argumentos nomeados, Union Types, MATH EXPRESSION, NULLSAFE OPERATOR, JIP compilation, muitas outras melhorias de sintaxe, correções de bug.
+PHP 8.0: Argumentos nomeados, Union Types, MATH EXPRESSION, NULLSAFE OPERATOR, JIP compilation, muitas outras melhorias de sintaxe, correções de bugs.
 
 PHP 8.1: Enumerações, PROPRIEDADES SOMENTE LEITURA, never return type,novas funções fsync fdatasync array_is_list, muitas outras melhorias , correções de bugs.
 
