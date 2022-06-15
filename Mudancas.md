@@ -280,7 +280,7 @@ array(2) {
 Agora a diretiva ini `serialize_precision`controla a precisão de serialização quando é realizado o encoding de floats
 
 # ext/mcrypt foi depreciada
-É recomendavél migrar para OpenSSL.
+É recomendvel migrar para OpenSSL.
 
  ---
  # 7.1 - 7.2
