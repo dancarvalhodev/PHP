@@ -235,6 +235,53 @@ Warning: Cannot call func_num_args() dynamically in %s on line %d
  # DateTime constructor incorporates microseconds
  DateTime e DateTimeImmutable agora incorporam microsegundos quando construidos a partir do tempo atual ou por uma string relativa como *"first day of next mounth"*.
 
+ # O operador de indice vazio não é mais suportado por strings mais
+ Ao tentar aplicar o operador vazio de indices `[]` irá resultar em um fatal error em vez de converter silenciosamente para um array.
+
+ # Diretivas ini removidas
+ ```
+ session.entropy_file
+ session.entropy_length
+ session.hash_function
+ session.hash_bits_per_character
+ ```
+ 
+ # Ordem dos arrays foi modificada quando elementos são automáticamente criados durante atribuições por referência
+ ```
+<?php
+$array = [];
+$array["a"] =& $array["b"];
+$array["b"] = 1;
+var_dump($array);
+?>
+ ```
+
+ **No Php 7.0**
+ ```
+array(2) {
+  ["a"]=>
+  &int(1)
+  ["b"]=>
+  &int(1)
+}
+```
+
+**No PHP 7.1**
+```
+array(2) {
+  ["b"]=>
+  &int(1)
+  ["a"]=>
+  &int(1)
+}
+```
+
+# JSON encoding e decoding
+Agora a diretiva ini `serialize_precision`controla a precisão de serialização quando é realizado o encoding de floats
+
+# ext/mcrypt foi depreciada
+É recomendavél migrar para OpenSSL.
+
  ---
  # 7.1 - 7.2
  # number_format() não retorna mais um zero negativo
