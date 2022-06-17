@@ -1,2 +1,2 @@
 # PHP
-Repository to save my PHP study, including difference between versions and some code examples
+Repositório para salvar meu estudo do PHP, incluindo diferenças entre versões e alguns exemplos de código.
