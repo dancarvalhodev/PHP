@@ -117,3 +117,72 @@
 6. Diversas melhorias à extensão Curl, dentre elas, suporte a HTTP/2 Server Push. 
 
 7. Incrementos na utilização list()
+
+### 7.1 para 7.2
+#### Novas Features do PHP 7.2
+1. Novo tipo object
+    ```
+    <?php
+
+    function test(object $obj) : object
+    {
+        return new SplQueue();
+    }
+
+    test(new StdClass());
+
+    ```
+2. Extensões agora são carregadas apenas pelo nome
+    Agora não é necessário especificar o tipo da extensão (.so para Unix ou .dll para Windows).
+
+3. Sobrescrita de métodos abstratos
+    Métodos abstratos podem ser sobrescritos quando uma classe abstrata extender outra classe abstrada.
+
+    ```
+    <?php
+
+    abstract class A
+    {
+        abstract function test(string $s);
+    }
+    abstract class B extends A
+    {
+        // overridden - still maintaining contravariance for parameters and covariance for return
+        abstract function test($s) : int;
+    }
+    ```
+
+4. Sodium agora é uma core extension
+
+5. Password hashing com Argon2
+
+6. Informações de endereço foram aprimoradas na extensão Sockets
+
+7. Ampliação dos tipos de parâmetros
+    Agora tipos em parâmetros podem ser omitidos em métodos e implementações de interface.
+    ```
+    <?php
+
+    interface A
+    {
+        public function Test(array $input);
+    }
+
+    class B implements A
+    {
+        public function Test($input){} // type omitted for $input
+    }
+    ```
+
+8. Virgulas são permitidas para grupos de namespace
+    ```
+    <?php
+
+    use Foo\Bar\{
+        Foo,
+        Bar,
+        Baz,
+    };
+    ```
+
+9. Melhorias na extensão zip
