@@ -320,8 +320,42 @@ int(1)
 int(2)
 ```
 
+# Não é mais permitido passar null para get_class()
+Anteriormente ao passar null para get_class() era retornado o nome da classe que a cobre. Agora isso retorna um E_WARNING, para retornar o nome da classe basta não passar nenhum argumento para get_class()
+
+# object para nomes de classes
+Agora é um nome hard-reserved, sendo proibido o seu uso em nomes de classes, traits ou interfaces.
+
+# bc_mode()
+Agora não realiza o truncamento de números fracionários para inteiros.
+
 # Constantes indefinidas geram um E_WARNING
 Anteriormente era gerado um E_NOTICE e futuramente uma Error Exception.
+
+# Strings sem aspas
+Agora não é mais possível utilizar strings sem aspas, anteriormente era emitido um E_NOTICE, agora é emitido um E_WARNING
+```
+<?php
+
+var_dump(NONEXISTENT);
+
+/* Output:
+Warning: Use of undefined constant NONEXISTENT - assumed 'NONEXISTENT' (this will throw an Error in a future version of PHP) in %s on line %d
+string(11) "NONEXISTENT"
+*/
+```
+
+# __autoload()
+O método __autoload() foi depreciado pois é inferir ao spl_autoload_register() que permite encadear autoloads. **NÃO HÁ INTEROPERABILIDADE ENTRE OS DOIS ESTILOS DE AUTOLOADING**
+
+# create_function()
+Foi depreciada por razões de segurança, é recomendado utilizar funções anônimas como alternativa.
+
+# each()
+Foi depreciada em favor do foreach pois era mais lenta e causava problemas de implementações de novas features da linguagem.
+
+# MCrypt movido para o PECL
+Devido a falta de atualizações desde 2007, foi substituida pelo OpenSSL e Sodium.
 
 ---
 # 7.2 - 7.3
