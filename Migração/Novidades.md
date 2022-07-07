@@ -186,3 +186,16 @@
     ```
 
 9. Melhorias na extensão zip
+
+### 7.2 para 7.3
+#### Novas Features PHP 7.3
+1) Sintaxe Herodoc e Nowdoc agora são mais flexiveis.
+
+2) Operador Instaceof agora aceita literais
+
+3) Alguns erros de Compilação agora retornam CompileError Exception
+
+4) Adicionadas mais opções para o FastCGI Process Manager
+    Opções como log_limit, log_buffering e decorate_workes_output
+
+5) Melhorias de performance.

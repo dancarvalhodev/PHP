@@ -360,6 +360,17 @@ Devido a falta de atualizações desde 2007, foi substituida pelo OpenSSL e Sodi
 ---
 # 7.2 - 7.3
 
+# Syntax Error em interpretações equivocadas de Heredoc/Nowdoc
+```
+<?php
+$str = <<<FOO
+abcdefg
+   FOO
+FOO;
+?>
+```
+O Foo que esta indentado é interpretado como fim do herodoc e o foo seguinte com o ; causa o erro de sintaxe.
+
 # Warning ao usar continue em um switch
 ```
 <?php
@@ -379,3 +390,6 @@ Prepared Statements agora utilizam corretamente segundos fracionários, anterior
 
 # SimpleXML
 Operações matemáticas envolvendo objetos do SimplesXML agora tratam o texto como inteiro ou float caso for mais apropriado.
+
+# Constantes Case-Insensitive
+Foi depreciado o suporte para declaracão de constantes case-insensitive. Caso passe true para um `define()` é gerado um aviso de depreciação.
